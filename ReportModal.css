@@ -1,0 +1,182 @@
+.report-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+
+  background: rgba(0, 0, 0, 0.4);
+
+  backdrop-filter: blur(6px);
+}
+
+.report-modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 430px;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  background: white;
+
+  border-radius: 25px;
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2);
+}
+
+.report-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+
+  width: 34px;
+  height: 34px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #f2f2f4;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+.report-modal h2 {
+  margin: 0 0 5px;
+  font-size: 22px;
+}
+
+.report-subtitle {
+  margin: 0 0 20px;
+  color: #888;
+}
+
+.report-reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.report-reasons button {
+  padding: 13px 14px;
+
+  border: 1px solid #ededf0;
+  border-radius: 14px;
+
+  background: #fafafa;
+
+  text-align: left;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.report-reasons button.selected {
+  background: #fff0f4;
+  border-color: #ff8eaa;
+  color: #ff4f7b;
+}
+
+.report-modal textarea {
+  width: 100%;
+  min-height: 90px;
+
+  margin-top: 15px;
+
+  padding: 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #e5e5e8;
+  border-radius: 14px;
+
+  resize: vertical;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  outline: none;
+}
+
+.report-modal textarea:focus {
+  border-color: #ff8eaa;
+}
+
+.report-submit {
+  width: 100%;
+
+  margin-top: 12px;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 15px;
+
+  background: #ff4f7b;
+  color: white;
+
+  font-family: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.report-submit:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.report-success {
+  text-align: center;
+}
+
+.report-success-icon {
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f1f1f3;
+
+  font-size: 30px;
+}
+
+.report-success p {
+  color: #888;
+  line-height: 1.5;
+}
+
+.report-success button {
+  width: 100%;
+
+  padding: 13px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #222;
+  color: white;
+
+  font-family: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+}

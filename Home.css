@@ -1,0 +1,491 @@
+.home-page {
+  min-height: 100vh;
+
+  background: #f5f5f7;
+}
+
+
+/* =========================
+   FEED
+========================= */
+
+.home-feed {
+  width: 100%;
+  max-width: 620px;
+
+  margin: 0 auto;
+
+  padding: 22px 16px 120px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.home-welcome {
+  margin-bottom: 18px;
+}
+
+.home-welcome-small {
+  margin: 0 0 5px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+
+  color: #9999a1;
+}
+
+.home-welcome h1 {
+  margin: 0;
+
+  font-size: 28px;
+  line-height: 1.2;
+
+  color: #202024;
+}
+
+.home-welcome p:last-child {
+  margin: 7px 0 0;
+
+  font-size: 14px;
+  line-height: 1.45;
+
+  color: #777780;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.home-profile-card {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 15px;
+
+  margin-bottom: 15px;
+
+  background: white;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 6px 25px rgba(0, 0, 0, 0.055);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.home-profile-card:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.home-profile-card:active {
+  transform: scale(0.99);
+}
+
+
+.home-profile-avatar {
+  width: 65px;
+  height: 65px;
+
+  flex-shrink: 0;
+
+  border-radius: 19px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eeeeF2;
+
+  font-size: 28px;
+}
+
+.home-profile-avatar img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.home-profile-info {
+  min-width: 0;
+}
+
+.home-profile-name {
+  font-size: 18px;
+  font-weight: 750;
+
+  color: #242429;
+}
+
+.home-profile-name span {
+  font-weight: 500;
+
+  color: #777780;
+}
+
+.home-profile-meta {
+  margin-top: 4px;
+
+  font-size: 12px;
+
+  color: #81818a;
+}
+
+.home-profile-link {
+  margin-top: 8px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  color: #55555d;
+}
+
+
+/* =========================
+   DISCOVERY CARD
+========================= */
+
+.home-discovery-card {
+  position: relative;
+
+  padding: 20px;
+
+  margin-bottom: 15px;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fafafd
+    );
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.065);
+}
+
+
+.home-card-top {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 22px;
+}
+
+.home-card-avatar {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #f1f1f4;
+
+  font-size: 20px;
+}
+
+.home-card-top strong {
+  display: block;
+
+  font-size: 13px;
+
+  color: #303036;
+}
+
+.home-card-top span {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 11px;
+
+  color: #9999a1;
+}
+
+
+.home-discovery-content h2 {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 1.2;
+
+  letter-spacing: -0.3px;
+
+  color: #222228;
+}
+
+.home-discovery-content p {
+  margin: 9px 0 0;
+
+  font-size: 14px;
+  line-height: 1.55;
+
+  color: #707078;
+}
+
+
+.home-discovery-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 20px;
+
+  padding: 14px 16px;
+
+  border: none;
+  border-radius: 16px;
+
+  background: #222226;
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.18s;
+}
+
+.home-discovery-button:hover {
+  background: #333338;
+}
+
+.home-discovery-button span {
+  font-size: 18px;
+}
+
+
+/* =========================
+   POST
+========================= */
+
+.home-post-card {
+  padding: 20px;
+
+  margin-bottom: 15px;
+
+  background: white;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 6px 25px rgba(0, 0, 0, 0.05);
+}
+
+
+.home-post-header {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+.home-post-icon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: #f1f1f4;
+
+  font-size: 18px;
+}
+
+.home-post-header strong {
+  font-size: 13px;
+  color: #333338;
+}
+
+.home-post-header span {
+  font-size: 12px;
+  color: #9999a1;
+}
+
+.home-post-card h3 {
+  margin: 0;
+
+  font-size: 18px;
+
+  color: #25252a;
+}
+
+.home-post-card p {
+  margin: 8px 0 0;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #777780;
+}
+
+
+/* =========================
+   MATCHES
+========================= */
+
+.home-matches-card {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 16px;
+
+  margin-bottom: 15px;
+
+  background: white;
+
+  border-radius: 21px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 6px 25px rgba(0, 0, 0, 0.05);
+
+  transition: 0.18s;
+}
+
+.home-matches-card:hover {
+  transform: translateY(-1px);
+}
+
+.home-matches-icon {
+  width: 46px;
+  height: 46px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: #f4f4f6;
+
+  font-size: 22px;
+}
+
+.home-matches-info {
+  flex: 1;
+}
+
+.home-matches-info strong {
+  display: block;
+
+  font-size: 15px;
+
+  color: #2c2c31;
+}
+
+.home-matches-info p {
+  margin: 4px 0 0;
+
+  font-size: 12px;
+  line-height: 1.35;
+
+  color: #8a8a92;
+}
+
+.home-arrow {
+  font-size: 21px;
+  color: #9999a1;
+}
+
+
+/* =========================
+   TIP
+========================= */
+
+.home-tip {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 11px;
+
+  padding: 15px;
+
+  border-radius: 19px;
+
+  background: #eeeeF1;
+}
+
+.home-tip > span {
+  font-size: 19px;
+}
+
+.home-tip strong {
+  font-size: 13px;
+
+  color: #44444a;
+}
+
+.home-tip p {
+  margin: 3px 0 0;
+
+  font-size: 12px;
+  line-height: 1.4;
+
+  color: #85858d;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .home-feed {
+    padding:
+      17px
+      12px
+      120px;
+  }
+
+  .home-welcome h1 {
+    font-size: 25px;
+  }
+
+  .home-discovery-content h2 {
+    font-size: 22px;
+  }
+
+}

@@ -1,0 +1,105 @@
+.profile-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.profile-card {
+  width: 450px;
+  max-width: 100%;
+  padding: 35px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.profile-subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.profile-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-card input,
+.profile-card select,
+.profile-card textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.profile-card textarea {
+  resize: vertical;
+}
+
+.profile-card input:focus,
+.profile-card select:focus,
+.profile-card textarea:focus {
+  outline: none;
+  border-color: #ff4f81;
+}
+
+.profile-card button {
+  padding: 14px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 10px;
+  background: #ff4f81;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profile-card button:disabled {
+  opacity: 0.6;
+}
+
+.profile-error {
+  margin-top: 15px;
+  color: #d00;
+  text-align: center;
+}
+.avatar-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.avatar-label {
+  font-weight: 600;
+}
+
+.avatar-upload input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.avatar-upload small {
+  color: #777;
+}
+
+.avatar-preview {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto;
+}
