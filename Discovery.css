@@ -412,3 +412,5 @@
     padding: 38px 22px;
   }
 }
+
+.discovery-container{padding-top:30px}.discovery-card{border:1px solid rgba(18,59,120,.055);box-shadow:0 20px 55px rgba(23,38,61,.12)}.discovery-photo{aspect-ratio:4/5;height:auto;max-height:650px}.discovery-content{min-height:74px}.discovery-actions{border-top:1px solid #f0f1f4}.discovery-report-button{min-height:40px;padding:0 13px;border:1px solid #eceef2;border-radius:12px;background:#fafbfc;color:#777d87;font-size:12px;font-weight:700;cursor:pointer;transition:background .2s ease,transform .15s ease}.discovery-report-button:hover{background:#f3f5f8;transform:translateY(-1px)}@media(max-width:600px){.discovery-container{padding-top:12px}.discovery-photo{aspect-ratio:auto;height:540px}.discovery-actions{gap:12px}.discovery-report-button{padding:0 10px}}
