@@ -308,6 +308,7 @@ function App() {
   return (
     <div className="app-shell">
       <Header
+        user={session.user}
         onHome={goHome}
         onSupport={openSupport}
       />
