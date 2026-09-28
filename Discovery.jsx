@@ -80,6 +80,19 @@ function Discovery({ user, onHome }) {
       (item) => item.viewed_profile_id
     );
 
+    const { data: liked, error: likedError } = await supabase
+      .from("likes")
+      .select("liked_user_id")
+      .eq("user_id", user.id);
+
+    if (likedError) {
+      console.error("Ошибка загрузки поставленных лайков:", likedError);
+      setLoading(false);
+      return;
+    }
+
+    const likedIds = (liked || []).map((item) => item.liked_user_id);
+
     let query = supabase
       .from("profiles")
       .select("*")
@@ -106,7 +119,8 @@ function Discovery({ user, onHome }) {
 
     const availableProfiles = (data || []).filter(
       (profile) =>
-        !viewedIds.includes(profile.id)
+        !viewedIds.includes(profile.id) &&
+        !likedIds.includes(profile.id)
     );
 
     setProfiles(availableProfiles);
