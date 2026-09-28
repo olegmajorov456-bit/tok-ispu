@@ -211,3 +211,5 @@
     height: 38px;
   }
 }
+
+.header-notification-button{position:relative;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(18,59,120,.07);border-radius:14px;background:#f5f7fa;color:#30343b;cursor:pointer;transition:transform .15s ease,background .2s ease,box-shadow .2s ease}.header-notification-button:hover{background:#edf4ff;box-shadow:0 5px 18px rgba(18,59,120,.09)}.header-notification-button:active{transform:scale(.95)}.header-notification-icon{font-size:19px}.header-notification-badge{position:absolute;top:-4px;right:-4px;min-width:19px;height:19px;padding:0 5px;border-radius:999px;display:flex;align-items:center;justify-content:center;background:#ee2f67;color:#fff;border:2px solid #fff;font-size:10px;font-weight:800}.notification-root{position:relative;display:flex}@media(max-width:600px){.header-notification-button{width:40px;height:40px;border-radius:13px}}
