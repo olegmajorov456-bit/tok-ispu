@@ -403,3 +403,5 @@ button {
     margin-bottom: 14px;
   }
 }
+
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;background:#f4f6f9}.app-shell{background:radial-gradient(circle at 8% 0%,rgba(23,75,145,.055),transparent 30%),radial-gradient(circle at 92% 8%,rgba(238,47,103,.045),transparent 26%),#f5f7fa}.app-content{width:100%;overflow-x:clip}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid rgba(23,75,145,.16);outline-offset:2px}
